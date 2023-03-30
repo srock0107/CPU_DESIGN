@@ -1,0 +1,334 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/KB245-1-2/Desktop/1101/cputop/simulation/modelsim
+vAddressingUnit
+Z1 !s110 1635738971
+!i10b 1
+!s100 D2LD0zN8k:0S6XMci^Z2`2
+IkI`jG02jElhN]DLJ9LAoJ2
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1635659684
+8C:/Users/KB245-1-2/Desktop/1101/cputop/AddressingUnit.v
+FC:/Users/KB245-1-2/Desktop/1101/cputop/AddressingUnit.v
+L0 8
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1635738971.018000
+!s107 C:/Users/KB245-1-2/Desktop/1101/cputop/AddressingUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop|C:/Users/KB245-1-2/Desktop/1101/cputop/AddressingUnit.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop
+n@addressing@unit
+vAddressLogic
+Z6 !s110 1635738970
+!i10b 1
+!s100 ooZSlY07cXadjf3_2C_n=1
+IeVzgH0CWM=Wm0LniO7Rm?0
+R2
+R0
+w1635660362
+8C:/Users/KB245-1-2/Desktop/1101/cputop/AddressLogic.v
+FC:/Users/KB245-1-2/Desktop/1101/cputop/AddressLogic.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1635738970.966000
+!s107 C:/Users/KB245-1-2/Desktop/1101/cputop/AddressLogic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop|C:/Users/KB245-1-2/Desktop/1101/cputop/AddressLogic.v|
+!i113 1
+R4
+R5
+n@address@logic
+vArithmeticUnit
+R6
+!i10b 1
+!s100 Q_M>DlKXP;h4MWBXLOkdl0
+I2fzj3lXd^ondM?iHh]DAZ1
+R2
+R0
+w1635088320
+8C:/Users/KB245-1-2/Desktop/1101/cputop/ArithmeticUnit.v
+FC:/Users/KB245-1-2/Desktop/1101/cputop/ArithmeticUnit.v
+L0 19
+R3
+r1
+!s85 0
+31
+!s108 1635738970.908000
+!s107 C:/Users/KB245-1-2/Desktop/1101/cputop/ArithmeticUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop|C:/Users/KB245-1-2/Desktop/1101/cputop/ArithmeticUnit.v|
+!i113 1
+R4
+R5
+n@arithmetic@unit
+vcontrol
+R6
+!i10b 1
+!s100 fNHjZW6ZmQ<lmJh5zRBnY1
+I_nd[7JFin:KmOE[Ncz_iY2
+R2
+R0
+w1635736182
+8C:/Users/KB245-1-2/Desktop/1101/cputop/control.v
+FC:/Users/KB245-1-2/Desktop/1101/cputop/control.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1635738970.839000
+!s107 C:/Users/KB245-1-2/Desktop/1101/cputop/control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop|C:/Users/KB245-1-2/Desktop/1101/cputop/control.v|
+!i113 1
+R4
+R5
+vcpu
+R6
+!i10b 1
+!s100 3:<_W;V0n>5DRT:SUmZKo1
+IPSR0SS<@7P3X^b]f[=n7O3
+R2
+R0
+w1635736212
+8C:/Users/KB245-1-2/Desktop/1101/cputop/cpu.v
+FC:/Users/KB245-1-2/Desktop/1101/cputop/cpu.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1635738970.758000
+!s107 C:/Users/KB245-1-2/Desktop/1101/cputop/cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop|C:/Users/KB245-1-2/Desktop/1101/cputop/cpu.v|
+!i113 1
+R4
+R5
+vcpu_top
+R6
+!i10b 1
+!s100 PSGOW2TOmALmI3[TFQT2Y0
+I9BOSCo;>;oXKCGOWOe1W12
+R2
+R0
+w1635738337
+8C:/Users/KB245-1-2/Desktop/1101/cputop/cpu_top.v
+FC:/Users/KB245-1-2/Desktop/1101/cputop/cpu_top.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1635738970.508000
+!s107 C:/Users/KB245-1-2/Desktop/1101/cputop/cpu_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop|C:/Users/KB245-1-2/Desktop/1101/cputop/cpu_top.v|
+!i113 1
+R4
+R5
+vcpu_top_vlg_tst
+R1
+!i10b 1
+!s100 l5Y_7;BlhW[NTj;Pg^7=d2
+IN<fzg4bhRoo_kd>@:J0hl1
+R2
+R0
+w1635231606
+8C:/Users/KB245-1-2/Desktop/1101/cputop/simulation/modelsim/cpu_top.vt
+FC:/Users/KB245-1-2/Desktop/1101/cputop/simulation/modelsim/cpu_top.vt
+L0 28
+R3
+r1
+!s85 0
+31
+!s108 1635738971.203000
+!s107 C:/Users/KB245-1-2/Desktop/1101/cputop/simulation/modelsim/cpu_top.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop/simulation/modelsim|C:/Users/KB245-1-2/Desktop/1101/cputop/simulation/modelsim/cpu_top.vt|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop/simulation/modelsim
+vDataPath
+R6
+!i10b 1
+!s100 5UIG;?PfI[ROOO][HQa]80
+I:JXg=KK1MS>noKbjSozW@0
+R2
+R0
+w1635736211
+8C:/Users/KB245-1-2/Desktop/1101/cputop/DataPath.v
+FC:/Users/KB245-1-2/Desktop/1101/cputop/DataPath.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1635738970.709000
+!s107 C:/Users/KB245-1-2/Desktop/1101/cputop/DataPath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop|C:/Users/KB245-1-2/Desktop/1101/cputop/DataPath.v|
+!i113 1
+R4
+R5
+n@data@path
+vInstrunctionRegister
+R6
+!i10b 1
+!s100 L^:_0A9GCILO96bHjd@c<1
+INmZ5heKolQh_LC4[5Q@zz0
+R2
+R0
+w1635659838
+8C:/Users/KB245-1-2/Desktop/1101/cputop/InstrunctionRegister.v
+FC:/Users/KB245-1-2/Desktop/1101/cputop/InstrunctionRegister.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1635738970.659000
+!s107 C:/Users/KB245-1-2/Desktop/1101/cputop/InstrunctionRegister.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop|C:/Users/KB245-1-2/Desktop/1101/cputop/InstrunctionRegister.v|
+!i113 1
+R4
+R5
+n@instrunction@register
+vPLL
+R6
+!i10b 1
+!s100 >aJV0Bk=>h3ih6>c2AM113
+I:1M<:AA1o:_4<WU3B?lld0
+R2
+R0
+w1473385686
+8C:/Users/KB245-1-2/Desktop/1101/cputop/PLL_sim/PLL.vo
+FC:/Users/KB245-1-2/Desktop/1101/cputop/PLL_sim/PLL.vo
+L0 31
+R3
+r1
+!s85 0
+31
+!s108 1635738970.351000
+!s107 C:/Users/KB245-1-2/Desktop/1101/cputop/PLL_sim/PLL.vo|
+!s90 -reportprogress|300|C:/Users/KB245-1-2/Desktop/1101/cputop/PLL_sim/PLL.vo|
+!i113 1
+n@p@l@l
+vProgramCounter
+R6
+!i10b 1
+!s100 <>`Hz@?fFC^><;FFHd`zz3
+IbRiaF<mS3Ji8XV8K4fk=T3
+R2
+R0
+w1635660380
+8C:/Users/KB245-1-2/Desktop/1101/cputop/ProgramCounter.v
+FC:/Users/KB245-1-2/Desktop/1101/cputop/ProgramCounter.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1635738970.612000
+!s107 C:/Users/KB245-1-2/Desktop/1101/cputop/ProgramCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop|C:/Users/KB245-1-2/Desktop/1101/cputop/ProgramCounter.v|
+!i113 1
+R4
+R5
+n@program@counter
+vRAM
+R1
+!i10b 1
+!s100 YVnC:8zE04@g1eKkK<UO_2
+IJmlUDaJSi1[[`V3Lb8GP:2
+R2
+R0
+w1473390260
+8C:/Users/KB245-1-2/Desktop/1101/cputop/ram.v
+FC:/Users/KB245-1-2/Desktop/1101/cputop/ram.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1635738971.133000
+!s107 C:/Users/KB245-1-2/Desktop/1101/cputop/ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop|C:/Users/KB245-1-2/Desktop/1101/cputop/ram.v|
+!i113 1
+R4
+R5
+n@r@a@m
+vRAM_CORE
+R1
+!i10b 1
+!s100 <K7`41j5_kG?^HQXaBbe51
+I2h@4YX3JJ;S=GRmG7gjEg2
+R2
+R0
+w1635738355
+8C:/Users/KB245-1-2/Desktop/1101/cputop/RAM_CORE.v
+FC:/Users/KB245-1-2/Desktop/1101/cputop/RAM_CORE.v
+L0 39
+R3
+r1
+!s85 0
+31
+!s108 1635738971.071000
+!s107 C:/Users/KB245-1-2/Desktop/1101/cputop/RAM_CORE.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop|C:/Users/KB245-1-2/Desktop/1101/cputop/RAM_CORE.v|
+!i113 1
+R4
+R5
+n@r@a@m_@c@o@r@e
+vRegisterFile
+R6
+!i10b 1
+!s100 >Sh6O53zGTnQ<XcJKLOm;3
+IdBdoNV@LRL@=hhXoVzaM[3
+R2
+R0
+w1635229642
+8C:/Users/KB245-1-2/Desktop/1101/cputop/RegisterFile.v
+FC:/Users/KB245-1-2/Desktop/1101/cputop/RegisterFile.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1635738970.559000
+!s107 C:/Users/KB245-1-2/Desktop/1101/cputop/RegisterFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop|C:/Users/KB245-1-2/Desktop/1101/cputop/RegisterFile.v|
+!i113 1
+R4
+R5
+n@register@file
+vStatusRegister
+R6
+!i10b 1
+!s100 G9=^3`J1kefV8?^:]L;l40
+ISi4:G9K@j7RL?`VEUzjVo0
+R2
+R0
+w1635659878
+8C:/Users/KB245-1-2/Desktop/1101/cputop/StatusRegister.v
+FC:/Users/KB245-1-2/Desktop/1101/cputop/StatusRegister.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1635738970.444000
+!s107 C:/Users/KB245-1-2/Desktop/1101/cputop/StatusRegister.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop|C:/Users/KB245-1-2/Desktop/1101/cputop/StatusRegister.v|
+!i113 1
+R4
+R5
+n@status@register

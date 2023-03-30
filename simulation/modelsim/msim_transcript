@@ -1,0 +1,211 @@
+# Reading D:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl
+# do cpu_top_run_msim_rtl_verilog.do
+# if ![file isdirectory cpu_top_iputf_libs] {
+# 	file mkdir cpu_top_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/altera/13.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/altera/13.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "C:/Users/KB245-1-2/Desktop/1101/cputop/PLL_sim/PLL.vo"
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:56:10 on Nov 01,2021
+# vlog -reportprogress 300 C:/Users/KB245-1-2/Desktop/1101/cputop/PLL_sim/PLL.vo 
+# -- Compiling module PLL
+# 
+# Top level modules:
+# 	PLL
+# End time: 11:56:10 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop {C:/Users/KB245-1-2/Desktop/1101/cputop/StatusRegister.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:56:10 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop" C:/Users/KB245-1-2/Desktop/1101/cputop/StatusRegister.v 
+# -- Compiling module StatusRegister
+# 
+# Top level modules:
+# 	StatusRegister
+# End time: 11:56:10 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop {C:/Users/KB245-1-2/Desktop/1101/cputop/cpu_top.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:56:10 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop" C:/Users/KB245-1-2/Desktop/1101/cputop/cpu_top.v 
+# -- Compiling module cpu_top
+# 
+# Top level modules:
+# 	cpu_top
+# End time: 11:56:10 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop {C:/Users/KB245-1-2/Desktop/1101/cputop/RegisterFile.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:56:10 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop" C:/Users/KB245-1-2/Desktop/1101/cputop/RegisterFile.v 
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# End time: 11:56:10 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop {C:/Users/KB245-1-2/Desktop/1101/cputop/ProgramCounter.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:56:10 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop" C:/Users/KB245-1-2/Desktop/1101/cputop/ProgramCounter.v 
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+# End time: 11:56:10 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop {C:/Users/KB245-1-2/Desktop/1101/cputop/InstrunctionRegister.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:56:10 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop" C:/Users/KB245-1-2/Desktop/1101/cputop/InstrunctionRegister.v 
+# -- Compiling module InstrunctionRegister
+# 
+# Top level modules:
+# 	InstrunctionRegister
+# End time: 11:56:10 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop {C:/Users/KB245-1-2/Desktop/1101/cputop/DataPath.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:56:10 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop" C:/Users/KB245-1-2/Desktop/1101/cputop/DataPath.v 
+# -- Compiling module DataPath
+# 
+# Top level modules:
+# 	DataPath
+# End time: 11:56:10 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop {C:/Users/KB245-1-2/Desktop/1101/cputop/cpu.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:56:10 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop" C:/Users/KB245-1-2/Desktop/1101/cputop/cpu.v 
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# End time: 11:56:10 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop {C:/Users/KB245-1-2/Desktop/1101/cputop/control.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:56:10 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop" C:/Users/KB245-1-2/Desktop/1101/cputop/control.v 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 11:56:10 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop {C:/Users/KB245-1-2/Desktop/1101/cputop/ArithmeticUnit.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:56:10 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop" C:/Users/KB245-1-2/Desktop/1101/cputop/ArithmeticUnit.v 
+# -- Compiling module ArithmeticUnit
+# 
+# Top level modules:
+# 	ArithmeticUnit
+# End time: 11:56:10 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop {C:/Users/KB245-1-2/Desktop/1101/cputop/AddressLogic.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:56:10 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop" C:/Users/KB245-1-2/Desktop/1101/cputop/AddressLogic.v 
+# -- Compiling module AddressLogic
+# 
+# Top level modules:
+# 	AddressLogic
+# End time: 11:56:10 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop {C:/Users/KB245-1-2/Desktop/1101/cputop/AddressingUnit.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:56:11 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop" C:/Users/KB245-1-2/Desktop/1101/cputop/AddressingUnit.v 
+# -- Compiling module AddressingUnit
+# 
+# Top level modules:
+# 	AddressingUnit
+# End time: 11:56:11 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop {C:/Users/KB245-1-2/Desktop/1101/cputop/RAM_CORE.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:56:11 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop" C:/Users/KB245-1-2/Desktop/1101/cputop/RAM_CORE.v 
+# -- Compiling module RAM_CORE
+# 
+# Top level modules:
+# 	RAM_CORE
+# End time: 11:56:11 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop {C:/Users/KB245-1-2/Desktop/1101/cputop/ram.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:56:11 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop" C:/Users/KB245-1-2/Desktop/1101/cputop/ram.v 
+# -- Compiling module RAM
+# 
+# Top level modules:
+# 	RAM
+# End time: 11:56:11 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/KB245-1-2/Desktop/1101/cputop/simulation/modelsim {C:/Users/KB245-1-2/Desktop/1101/cputop/simulation/modelsim/cpu_top.vt}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:56:11 on Nov 01,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/KB245-1-2/Desktop/1101/cputop/simulation/modelsim" C:/Users/KB245-1-2/Desktop/1101/cputop/simulation/modelsim/cpu_top.vt 
+# -- Compiling module cpu_top_vlg_tst
+# 
+# Top level modules:
+# 	cpu_top_vlg_tst
+# End time: 11:56:11 on Nov 01,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  cpu_top_vlg_tst
+# vsim -gui "+altera" -l msim_transcript -do "cpu_top_run_msim_rtl_verilog.do" 
+# Start time: 11:56:11 on Nov 01,2021
+# Loading work.cpu_top_vlg_tst
+# Loading work.cpu_top
+# Loading work.RAM
+# Loading work.RAM_CORE
+# Loading altera_mf_ver.altsyncram
+# Loading work.cpu
+# Loading work.DataPath
+# Loading work.AddressingUnit
+# Loading work.ProgramCounter
+# Loading work.AddressLogic
+# Loading work.ArithmeticUnit
+# Loading work.RegisterFile
+# Loading work.InstrunctionRegister
+# Loading work.StatusRegister
+# Loading work.control
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : C:/Users/KB245-1-2/Desktop/1101/cputop/simulation/modelsim/cpu_top.vt(54)
+#    Time: 6040 ps  Iteration: 0  Instance: /cpu_top_vlg_tst
+# Break in Module cpu_top_vlg_tst at C:/Users/KB245-1-2/Desktop/1101/cputop/simulation/modelsim/cpu_top.vt line 54
+# Simulation Breakpoint: Break in Module cpu_top_vlg_tst at C:/Users/KB245-1-2/Desktop/1101/cputop/simulation/modelsim/cpu_top.vt line 54
+# MACRO ./cpu_top_run_msim_rtl_verilog.do PAUSED at line 40
+# End time: 11:57:13 on Nov 01,2021, Elapsed time: 0:01:02
+# Errors: 0, Warnings: 0

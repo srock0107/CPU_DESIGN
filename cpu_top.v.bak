@@ -1,0 +1,90 @@
+///----------------------------------------------------------------------
+//--SAYEH(Simple Architecture Yet Enough Hardware) CPU
+//----------------------------------------------------------------------
+// SayehTest
+
+`timescale 1 ns /1ns
+
+module cpu_top(clk,ExternalReset/*,in,out*/);
+input clk, ExternalReset;
+/*input  [7:0] in;
+output [7:0] out;*/
+wire  MemDataready,Reset;
+wire [15:0]	 MemoryData;
+wire [15:0]  Addressbus,aluout;
+wire [15:0]  Databus;
+wire ReadMem, WriteMem/*, ReadIO, WriteIO*/;
+//reg [7:0] out;
+
+//wire [7:0] portadress;
+reg clk_5,clk_1;
+
+//reg [15:0] IO_datain;
+
+//assign portadress=Databus[7:0];
+ 
+
+/*always@(posedge clk_1)
+begin
+  if(WriteIO==1'b1)
+    begin
+    case(portadress)
+    8'd2:    out<=aluout[7:0];
+    default: out<=0;
+    endcase
+    end
+  else
+    out<=out;
+end
+
+
+always@(posedge clk_1)
+begin 
+  if(ReadIO)
+    begin
+	 case(portadress)
+	 8'd3: IO_datain<={8'd0,in};
+	 endcase
+    end 
+	else IO_datain<=0;
+end*/
+
+PLL U0(
+.refclk    (clk),//  50MHZ
+.rst       (),   //  
+.outclk_1  (clk_1),
+.outclk_0  (clk_5)// 1MHZ
+);
+
+
+ram1 U1(
+.readMem        (ReadMem),
+.address        (Addressbus),
+.clk            (clk_1),
+.data           (aluout),
+.wren           (WriteMem),
+.out            (Databus),
+.memDataReady   (MemDataready)
+);
+
+
+cpu U2 (
+.clk            (~clk_1),
+.ReadMem        (ReadMem),
+.WriteMem       (WriteMem),
+.ReadIO         (ReadIO),
+.WriteIO        (WriteIO),
+.Databus        (Databus),
+.IO_datain      (IO_datain),
+.Addressbus     (Addressbus),
+.aluout         (aluout),
+.ExternalReset  (Reset),
+.MemDataready   (MemDataready)
+);
+
+		
+
+assign Reset=~ExternalReset;
+
+endmodule
+

@@ -1,0 +1,33 @@
+//----------------------------------------------------------------------
+//--SAYEH (Simple Architecture Yet Enough Hardware) CPU
+//----------------------------------------------------------------------
+//Program Counter
+
+`timescale 1 ns /1 ns
+
+module ProgramCounter (in, enable, clk, out);
+input [15:0] in;
+input enable, clk;
+output [15:0] out;
+reg [15:0] out;
+
+	always @(negedge clk)
+		if (enable) out = in;
+
+endmodule
+
+module test_ProgramCounter;
+  reg [15:0] in;
+  reg enable, clk=0;
+  wire [15:0] out;
+  
+  ProgramCounter MTU(in, enable, clk, out);
+  
+  always #1 clk=~clk;
+  
+  initial begin
+    #10 in=4'b1110;
+    #10 enable=1;
+    #50 $stop;
+  end
+endmodule

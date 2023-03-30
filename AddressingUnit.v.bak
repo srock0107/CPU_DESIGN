@@ -1,0 +1,39 @@
+//----------------------------------------------------------------------
+//--SAYEH (Simple Architecture Yet Enough Hardware) CPU
+//----------------------------------------------------------------------
+// Addressing Unit
+
+`timescale 1 ns /1 ns
+
+module AddressingUnit (
+input [15:0] Rside,
+input [7:0] Iside,
+output [15:0] Address,
+input clk,ResetPC, PCplusI, PCplus1, RplusI, Rplus0, PCenable
+);
+wire [15:0] PCout;
+
+	ProgramCounter PC (Address, PCenable, clk, PCout);
+	AddressLogic AL (PCout, Rside, Iside, Address, ResetPC, PCplusI, PCplus1, RplusI, Rplus0);
+	
+endmodule
+
+module test_AddressingUnit;
+  reg [15:0] Rside;
+  reg [7:0] Iside;
+  reg ResetPC, PCplusI, PCplus1, RplusI, Rplus0, PCenable;
+  reg clk=0;
+  wire [15:0] Address;
+  
+  AddressingUnit MUT(Rside, Iside, Address, clk, ResetPC, PCplusI, PCplus1, RplusI, Rplus0, PCenable);
+  
+  always #1 clk=~clk;
+  
+  initial begin
+    #10 Rside=4'b1110;
+        Iside=4'b1101;
+    #10 PCenable=1;
+    #10 {ResetPC, PCplusI, PCplus1, RplusI, Rplus0}=5'b00010;
+    #10 $stop;
+  end
+endmodule

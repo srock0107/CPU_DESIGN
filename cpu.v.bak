@@ -1,0 +1,58 @@
+//----------------------------------------------------------------------
+//--SAYEH (Simple Architecture Yet Enough Hardware) CPU
+//----------------------------------------------------------------------
+//SAYEH
+
+`timescale 1 ns /1 ns
+
+module cpu (
+	clk,
+	ReadMem, WriteMem, ReadIO, WriteIO,
+	Databus,
+	IO_datain,
+	Addressbus,
+	aluout,
+	ExternalReset, MemDataready
+);
+input clk;
+output ReadMem, WriteMem, ReadIO, WriteIO;
+input  [15: 0] Databus,IO_datain;
+output [15: 0] Addressbus,aluout;
+input ExternalReset, MemDataready;
+
+//----------------------------------------------------------------------
+wire[15:0] Instruction;
+wire
+	ResetPC, PCplusI, PCplus1, RplusI, Rplus0,
+	Rs_on_AddressUnitRSide, Rd_on_AddressUnitRSide, EnablePC,
+	B15to0, AandB, AorB, notB, shlB, shrB, AaddB, AsubB, AmulB, AcmpB,sel_aluout_rfin,sel_rfin,
+	RFLwrite, RFHwrite, 
+	IRload, SRload, 
+	Address_on_Databus, ALU_on_Databus, IR_on_LOpndBus, IR_on_HOpndBus, RFright_on_OpndBus,
+	Cset, Creset, 
+	Cflag,Zflag;  
+
+	DataPath dp (
+		clk, Databus, Addressbus, ResetPC, PCplusI, PCplus1, RplusI, Rplus0,
+		Rs_on_AddressUnitRSide, Rd_on_AddressUnitRSide, EnablePC,
+		B15to0, AandB, AorB, notB, shlB, shrB, AaddB, AsubB, AmulB, AcmpB,aluout,sel_aluout_rfin,sel_rfin,
+		RFLwrite, RFHwrite,
+		IRload, SRload, 
+		Address_on_Databus, ALU_on_Databus, IR_on_LOpndBus, IR_on_HOpndBus, RFright_on_OpndBus,
+		Cset, Creset, 
+		Instruction, Cflag,Zflag,IO_datain
+	);
+
+	control ctrl (
+		ExternalReset, clk,
+		ResetPC, PCplusI, PCplus1, RplusI, Rplus0, 
+		Rs_on_AddressUnitRSide, Rd_on_AddressUnitRSide, EnablePC, 
+		B15to0, AandB, AorB, notB, shlB, shrB, AaddB, AsubB, AmulB, AcmpB,sel_aluout_rfin,sel_rfin,
+		RFLwrite, RFHwrite,
+		IRload, SRload, 
+		Address_on_Databus, ALU_on_Databus, IR_on_LOpndBus, IR_on_HOpndBus, RFright_on_OpndBus,
+		ReadMem, WriteMem,ReadIO, WriteIO, Cset, Creset, 
+		Instruction, Cflag,Zflag, MemDataready
+	);
+
+endmodule

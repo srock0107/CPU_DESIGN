@@ -1,0 +1,33 @@
+//----------------------------------------------------------------------
+//--SAYEH (Simple Architecture Yet Enough Hardware) CPU
+//----------------------------------------------------------------------
+//Instruction Register
+
+`timescale 1 ns /1 ns
+
+module InstrunctionRegister (in, IRload, clk, out);
+input [15:0] in;
+input IRload, clk;
+output [15:0] out;
+reg [15:0] out;
+
+	always @(negedge clk)
+		if (IRload == 1) out = in;
+
+endmodule
+
+module test_InstrunctionRegister;
+  reg [15:0] in;
+  reg IRload,clk=0;
+  wire [15:0] out;
+  
+  InstrunctionRegister MTU(in, IRload, clk, out);
+  
+  always #1 clk=~clk;
+  
+  initial begin
+    #10 in=15;
+    #10 IRload=1;
+    #10 $stop;
+  end
+endmodule

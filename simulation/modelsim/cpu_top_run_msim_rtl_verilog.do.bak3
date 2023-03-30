@@ -1,0 +1,20 @@
+transcript on
+if ![file isdirectory cpu_top_iputf_libs] {
+	file mkdir cpu_top_iputf_libs
+}
+
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+
+
+vlog "C:/Users/lee/Desktop/cputop/PLL_sim/PLL.vo"
+
+vlog -vlog01compat -work work +incdir+C:/Users/lee/Desktop/cputop {C:/Users/lee/Desktop/cputop/AddressLogic.v}
+
