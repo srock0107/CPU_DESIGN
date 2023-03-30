@@ -1,0 +1,10 @@
+
+State Machine - |control|Pstate
+Name Pstate.incpc Pstate.exec1inp Pstate.exec1lda Pstate.exec1 Pstate.memread Pstate.fetch Pstate.reset 
+Pstate.reset 0 0 0 0 0 0 0 
+Pstate.fetch 0 0 0 0 0 1 1 
+Pstate.memread 0 0 0 0 1 0 1 
+Pstate.exec1 0 0 0 1 0 0 1 
+Pstate.exec1lda 0 0 1 0 0 0 1 
+Pstate.exec1inp 0 1 0 0 0 0 1 
+Pstate.incpc 1 0 0 0 0 0 1 
